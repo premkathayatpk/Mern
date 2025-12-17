@@ -1,0 +1,46 @@
+.parent{
+  border: 2px solid black;
+  height: 1000px;
+
+   /* position: absolute; */
+ /* position: static;  
+  position: sticky;
+  position: fixed;*/
+  /* position: relative;  */
+
+
+}
+
+.child{
+  border: 2px solid rgb(185, 13, 13);
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+
+  /* position: static;  */
+  /* position: relative; */
+  position: absolute;
+  /* position: fixed; */
+  left: 40px;
+  top: 20px;
+  /* right: 20px; */
+  /* bottom:20px; */
+z-index: 6;
+
+
+  
+  
+ }
+
+ .child2{
+  border: 2px solid rgb(185, 13, 13);
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  /* position: sticky;  */
+  /* top: 5px; */
+
+    position: absolute;
+    z-index: 5;
+
+ }
