@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.responsive {
+  border: 2px solid black;
+  height: 200px;
+}
+
+/* @media (width:200px) {
+  .responsive{
+background-color: black;
+color:white;s
+  }
+  
+} */
+
+/* 
+@media (min-width:300px) {
+  .responsive{
+    background-color: yellow;
+  }
+  
+} */
+
+/* @media (max-width:300px) {
+  .responsive{
+    background-color: yellow;
+  }
+  
+} */
+
+@media (min-width: 0px) and (max-width: 300px) {
+  .responsive {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .responsive {
+    background-color: rgb(106, 0, 255);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1300px) {
+  .responsive {
+    background-color: rgb(0, 247, 181);
+  }
+}
