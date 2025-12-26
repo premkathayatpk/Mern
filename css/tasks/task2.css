@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin:0 50px 10px 50px;
+}
+
+body{
+   background-image: url(./image/woodenbg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  padding: 20px;
+
+  
+  
+
+}
+.ramen{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  overflow: hidden;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.item{
+  /* border: 1px solid black; */
+  background-color: white;
+  /* height: 500px; */
+  width: 300px;
+  margin: 20px;
+ 
+  padding: 15px 0px 20px 0px;
+  text-align: center;
+  
+  border-radius: 50px;
+  position: relative;
+  
+  
+}
+
+.item img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.text{
+  text-align: center;
+}
+.ramen .price{
+  background-color: rgb(165, 131, 90);
+  width: 70px;
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  
+}
+
+h1{
+  color: white;
+}
+
+.beverage{
+  /* border: 1px solid black; */
+  background-color: white;
+  /* height: 400px; */
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 5%;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.bev{
+  /* border: 1px solid black; */
+  width: 300px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bev img{
+  width: 120px;
+  height: 150px;
+}
+
+.bev h1
+{
+  color: black;
+}
+.bev .price{
+  border: 3px solid black;
+  margin-bottom: -190px;
+  background-color: rgb(165, 131, 90);
+  width: 70px;
+  padding: 8px 15px;
+  /* display: inline-block; */
+  border-radius: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  
+}
+.money
+{
+  display: flex;
+  font-size: 25px;
+}
+.sub-amt{
+  font-size: 18px;
+  margin-top: 8px;
+}
+.footer{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 ;
+ 
+}
+
+
