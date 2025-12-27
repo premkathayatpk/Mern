@@ -61,3 +61,7 @@ console.log(grater5);
 
 // 8. Write a function that filters out empty strings from an array. 
 
+
+
+// 9. Write a function that maps an array of numbers to an array where each number is doubled. 
+
