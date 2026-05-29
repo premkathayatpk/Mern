@@ -1,19 +1,46 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const registerUser = async () => {
+    try {
+      const res = await fetch("http://localhost:3000/api/user/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+      const data = await res.json();
+
+      if (res.ok) {
+        alert("User registered successfully!");
+        navigate("/login");
+      } else {
+        alert("Failed to register user: " + data.message);
+      }
+    } catch (error) {
+      console.error("Error registering user:", error);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, password);
+    registerUser();
   };
 
   return (
     <div>
       <div className="max-w-md mx-auto mt-10 bg-amber-500 rounded-xl shadow-xl ">
         <h1 className="text-center text-2xl font-bold text-white py-2">
-          Register 
+          Register
         </h1>
         <form
           onSubmit={handleSubmit}
@@ -43,7 +70,7 @@ const Register = () => {
             type="submit"
             className="bg-amber-500 text-white py-2 rounded-md hover:bg-amber-600"
           >
-            Login
+            Sign Up
           </button>
         </form>
       </div>
